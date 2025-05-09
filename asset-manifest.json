@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/web-page-teacher/static/css/main.86c367c4.css",
-    "main.js": "/web-page-teacher/static/js/main.e8662fd3.js",
+    "main.js": "/web-page-teacher/static/js/main.d80e9e54.js",
     "static/js/453.f94d1b17.chunk.js": "/web-page-teacher/static/js/453.f94d1b17.chunk.js",
     "static/media/barrio_unido_logo.png": "/web-page-teacher/static/media/barrio_unido_logo.9768796798464e19610c.png",
     "static/media/ruben.jpg": "/web-page-teacher/static/media/ruben.90bc191eae487824dcd9.jpg",
     "index.html": "/web-page-teacher/index.html",
     "main.86c367c4.css.map": "/web-page-teacher/static/css/main.86c367c4.css.map",
-    "main.e8662fd3.js.map": "/web-page-teacher/static/js/main.e8662fd3.js.map",
+    "main.d80e9e54.js.map": "/web-page-teacher/static/js/main.d80e9e54.js.map",
     "453.f94d1b17.chunk.js.map": "/web-page-teacher/static/js/453.f94d1b17.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86c367c4.css",
-    "static/js/main.e8662fd3.js"
+    "static/js/main.d80e9e54.js"
   ]
 }
