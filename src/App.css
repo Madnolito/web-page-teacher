@@ -1,38 +1,269 @@
-.App {
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1.2px;
+  line-height: 1.8;
+}
+
+.split-word {
+  will-change: transform, opacity;
+}
+
+.main-container {
+  padding-top: 9rem;
+  box-sizing: border-box;
+  min-height: 100vh; 
+}
+
+/* HOME CSS */
+
+.home-fs {
+  padding-top: 7rem;
+  padding-left: 25rem;
+  padding-right: 25rem;
+  padding-bottom: 3rem;
+}
+
+.home-fs-title {
+  font-weight: 700;
+  color: rgb(44, 44, 44);
+  font-size: 90px;
+}
+
+.home-fs-description {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding-top: 1rem;
+}
+
+.avatar-fs-img {
+  width: 280;
+  height: 280;
+  margin-right: 15px;
+  border: 4px solid white;
+}
+
+.home-ss {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.home-ss-title {
+  font-weight: 900;
+  color: rgb(52, 132, 134);
+  font-size: 50px;
+  text-transform: uppercase;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-ss-description {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between; 
+  gap: 2rem; 
 }
 
-.App-link {
-  color: #61dafb;
+.home-ss-text{
+  text-align: justify;
+  width: 1500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* FIN HOME CSS */
+
+.media-icons{
+  font-size: 2rem;
+}
+
+/* Celulares: hasta 599px */
+@media (max-width: 599.95px) {
+
+  .main-container {
+    padding-top: 4rem;
+    box-sizing: border-box;
+    min-height: 100vh; 
   }
-  to {
-    transform: rotate(360deg);
+
+  .home-fs, .home-ss {
+    padding: 0;
   }
+
+  .home-fs-title {
+    font-size: 70px;
+    line-height: 1.1;
+  }
+
+  .avatar-box{
+    justify-self: center;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+
+  .home-fs-description{
+    display: grid;
+  }
+
+  .home-ss-description {
+    display: flex;
+    flex-wrap: wrap;              
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .home-ss-text{
+    flex: 1 1 100%;                 
+    text-align: justify;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    width: unset;
+  }
+
+  .home-ss-title {
+    font-weight: 900;
+    color: rgb(52, 132, 134);
+    font-size: 35px;
+    overflow: hidden;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 48px;
+  }
+}
+
+/* Tablets verticales (iPad mini en vertical): 600px a 767px */
+@media (min-width: 600px) and (max-width: 767.95px) {
+  .main-container {
+    padding-top: 4rem;
+    box-sizing: border-box;
+    min-height: 100vh; 
+  }
+
+  .home-fs {
+    padding: 0;
+  }
+
+  .home-fs-title {
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .avatar-box{
+    justify-self: center;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+
+  .home-fs-description{
+    display: grid;
+  }
+
+  .home-ss-description {
+    display: flex;
+    flex-wrap: wrap;              
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .home-ss-text{
+    flex: 1 1 100%;               
+    text-align: justify;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    width: unset;
+  }
+
+  .home-ss-title {
+    font-weight: 900;
+    color: rgb(52, 132, 134);
+    font-size: 35px;
+    overflow: hidden;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 48px;
+  }
+}
+
+/* iPads y tablets horizontales: 768px a 1023px */
+@media (min-width: 768px) and (max-width: 1023.95px) {
+  .main-container {
+    padding-top: 4rem;
+    box-sizing: border-box;
+    min-height: 100vh; 
+  }
+
+  .home-fs, .home-ss {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .home-fs-title {
+    font-size: 70px;
+  }
+
+  .avatar-box{
+    justify-self: center;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+
+  .home-fs-description{
+    display: grid;
+  }
+
+  .home-ss-description {
+    display: flex;
+    flex-wrap: wrap;               
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .home-ss-text{
+    flex: 1 1 100%;                 
+    text-align: justify;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    width: unset;
+  }
+
+  .home-ss-title {
+    font-weight: 900;
+    color: rgb(52, 132, 134);
+    font-size: 35px;
+    overflow: hidden;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 48px;
+  }  
+}
+
+
+.flag-container {
+  display: flex;
+  width: 1000px; 
+  height: 500px;
+  overflow: hidden;
+  border-radius: 4px;
+  gap: 0; 
+}
+
+.flag-stripe {
+  flex: 1;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  will-change: transform;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-clip: border-box;
+  transform: scaleX(1.02);
 }
