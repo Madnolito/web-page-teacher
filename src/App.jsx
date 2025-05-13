@@ -5,6 +5,7 @@ import BackgroundWrapper from './components/main/BackgroundWrapper';
 import ScrollProgressBar from './components/VisualEffects/ScrollProgressBar';
 
 import Router from './router/Router';
+import Footer from './components/main/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Router />
           </div>
           </Box>
+          <Footer />
     </BackgroundWrapper>
 
   );

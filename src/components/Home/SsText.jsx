@@ -10,7 +10,7 @@ export default function HomeSsText() {
 useEffect(() => {
   gsap.fromTo(
     textRef.current,
-    { opacity: 0, scale: 0.8, y: 100 }, // 👈 desde más abajo
+    { opacity: 0, scale: 0.8, y: 100 },
     {
       opacity: 1,
       scale: 1,
@@ -20,6 +20,7 @@ useEffect(() => {
       scrollTrigger: {
         trigger: textRef.current,
         start: "top 90%",
+        end: "top 2%",
         toggleActions: "play none none reverse",
       },
     }
@@ -27,7 +28,7 @@ useEffect(() => {
 
   ScrollTrigger.create({
     trigger: textRef.current,
-    start: "top 90%",
+    start: "top 60%",
     end: "top 2%",
     scrub: true,
     onEnter: () => {
@@ -37,33 +38,6 @@ useEffect(() => {
         y: 0,
         duration: 1.5,
         ease: "power2.out",
-      });
-    },
-    onLeave: () => {
-      gsap.to(textRef.current, {
-        opacity: 0,
-        scale: 0.8,
-        y: -30, // 👈 hacia arriba al salir
-        duration: 0.3,
-        ease: "power2.in",
-      });
-    },
-    onEnterBack: () => {
-      gsap.to(textRef.current, {
-        opacity: 1,
-        scale: 1,
-        y: 0,
-        duration: 1.5,
-        ease: "power2.out",
-      });
-    },
-    onLeaveBack: () => {
-      gsap.to(textRef.current, {
-        opacity: 0,
-        scale: 0.8,
-        y: 100, // 👈 hacia abajo si vuelves atrás
-        duration: 0.3,
-        ease: "power2.in",
       });
     },
   });

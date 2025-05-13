@@ -48,6 +48,7 @@ html, body, #root {
 .home-ss {
   padding-left: 5rem;
   padding-right: 5rem;
+  padding-bottom: 3rem;
 }
 
 .home-ss-title {
@@ -94,6 +95,7 @@ html, body, #root {
 
   .home-fs, .home-ss {
     padding: 0;
+    padding-bottom: 2rem;
   }
 
   .home-fs-title {

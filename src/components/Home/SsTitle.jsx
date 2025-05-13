@@ -20,6 +20,7 @@ export default function HomeTitle() {
         scrollTrigger: {
           trigger: titleRef.current,
           start: "top 90%",
+          end: "top 2%",
           toggleActions: "play none none reverse", 
         },
       }
@@ -27,7 +28,7 @@ export default function HomeTitle() {
 
     ScrollTrigger.create({
       trigger: titleRef.current,
-      start: "top 90%",
+      start: "top 60%",
       end: "top 2%",
       scrub: true,
       onEnter: () => {
@@ -37,33 +38,6 @@ export default function HomeTitle() {
           y: 0,
           duration: 1.5,
           ease: "power2.out",
-        });
-      },
-      onLeave: () => {
-        gsap.to(titleRef.current, {
-          opacity: 0,
-          scale: 0.8,
-          y: -30,
-          duration: 0.3,
-          ease: "power2.in",
-        });
-      },
-      onEnterBack: () => {
-        gsap.to(titleRef.current, {
-          opacity: 1,
-          scale: 1,
-          y: 0,
-          duration: 1.5,
-          ease: "power2.out",
-        });
-      },
-      onLeaveBack: () => {
-        gsap.to(titleRef.current, {
-          opacity: 0,
-          scale: 0.8,
-          y: 30,
-          duration: 0.3,
-          ease: "power2.in",
         });
       },
     });
