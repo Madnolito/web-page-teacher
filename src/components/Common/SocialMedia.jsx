@@ -1,19 +1,20 @@
 import { Box, Stack, Divider } from "@mui/material";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import EmailIcon from '@mui/icons-material/Email';
 
 const icons = [
-  <MailOutlineIcon sx={{
+  <EmailIcon sx={{
     fontSize: {
       xs: "2rem",   
       sm: "2.5rem",    
       md: "2.5rem",  
     },
+    color: "rgb(240, 56, 56)"
   }}/>,
   <FacebookIcon sx={{
     fontSize: {
@@ -21,6 +22,7 @@ const icons = [
       sm: "2.5rem",    
       md: "2.5rem",  
     },
+    color: "#1877F2"
   }} />,
   <InstagramIcon sx={{
     fontSize: {
@@ -28,6 +30,7 @@ const icons = [
       sm: "2.5rem",    
       md: "2.5rem",  
     },
+    color: "#E4405F"
   }} />,
   <PinterestIcon sx={{
     fontSize: {
@@ -35,6 +38,7 @@ const icons = [
       sm: "2.5rem",    
       md: "2.5rem",  
     },
+    color: "#E60023"
   }} />,
   <YouTubeIcon sx={{
     fontSize: {
@@ -42,6 +46,7 @@ const icons = [
       sm: "2.5rem",    
       md: "2.5rem",  
     },
+    color: "#FF0000"
   }} />,
 ];
 

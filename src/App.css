@@ -68,6 +68,13 @@ html, body, #root {
 .home-ss-text{
   text-align: justify;
   width: 1500px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.6;
+  perspective: 800px;
+}
+
+.split-line {
+  display: block;
 }
 
 /* FIN HOME CSS */

@@ -19,7 +19,7 @@ const drawerWidth = 200;
 
 const navItems = [
   { label: 'Inicio', path: '/Home' },
-  { label: 'Sobre Mi', path: '/AboutMe' },
+  { label: 'Galería', path: '/AboutMe' },
   { label: 'Contacto', path: '/Contact' },
 ];
 

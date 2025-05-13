@@ -20,7 +20,7 @@ export default function HomeTitle() {
         scrollTrigger: {
           trigger: titleRef.current,
           start: "top 90%",
-          toggleActions: "play none none reverse", // ⚠️ esto es clave
+          toggleActions: "play none none reverse", 
         },
       }
     );

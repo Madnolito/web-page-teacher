@@ -8,7 +8,6 @@ const Contact = () => {
       <Typography sx={{ fontWeight: '400', color: 'white', fontSize: '88px'}} >
         About Me
       </Typography>
-
     </Box>
     </div>
   );

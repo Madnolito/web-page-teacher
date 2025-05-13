@@ -10,6 +10,7 @@ import SocialMedia from '../Common/SocialMedia';
 import BarrioUnido from '../../assets/barrio_unido_logo.png'
 import WavingFlag from './WavingFlag';
 import HomeTitle from './SsTitle';
+import HomeSsText from './SsText';
 
 const Home = () => {
 
@@ -133,28 +134,10 @@ const Home = () => {
 
       <Box className='home-ss' sx={{ textAlign: 'center' }}>
         <HomeTitle />
-
         <div className='home-ss-description'>
-
-          <div className='home-ss-text'>
-            Mi nombre es Rubén Santibañez, tengo 25 años, soy titulado en Pedagogía en Educacion Física,
-            Deportes y Recreación para educacion basica y media, cuento con experiencia tanto en el ámbito
-            escolar como en actividades deportivas extracurriculares.
-            Mi nombre es Rubén Santibañez, tengo 25 años, soy titulado en Pedagogía en Educacion Física,
-            Deportes y Recreación para educacion basica y media, cuento con experiencia tanto en el ámbito
-            escolar como en actividades deportivas extracurriculares.
-                        Mi nombre es Rubén Santibañez, tengo 25 años, soy titulado en Pedagogía en Educacion Física,
-            Deportes y Recreación para educacion basica y media, cuento con experiencia tanto en el ámbito
-            escolar como en actividades deportivas extracurriculares.
-                        Mi nombre es Rubén Santibañez, tengo 25 años, soy titulado en Pedagogía en Educacion Física,
-            Deportes y Recreación para educacion basica y media, cuento con experiencia tanto en el ámbito
-            escolar como en actividades deportivas extracurriculares.
-            
-            
-          </div>
-          
+          <HomeSsText />
           <WavingFlag src={BarrioUnido} width={flagWidth} height={flagHeight} />
-          </div>
+        </div>
       </Box>
     </Box>
   );
