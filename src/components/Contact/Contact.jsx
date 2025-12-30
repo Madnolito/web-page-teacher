@@ -6,7 +6,7 @@ const Contact = () => {
     <div className='main-pt'>
     <Box sx={{ textAlign: 'center' }}>
       <Typography sx={{ fontWeight: '400', color: 'white', fontSize: '88px'}} >
-        About Me
+        Contact
       </Typography>
     </Box>
     </div>

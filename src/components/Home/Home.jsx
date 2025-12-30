@@ -3,7 +3,6 @@ import { animate, stagger } from "motion";
 import { splitText } from "motion-plus";
 import { React, useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
-import ProfilePicture from '../../assets/ruben.jpg'
 import { useBounceInterval, useRotateYInterval } from '../VisualEffects/Animations';
 import { mobileOnlyPadding } from '../theme/utils';
 import SocialMedia from '../Common/SocialMedia';
@@ -108,7 +107,7 @@ const Home = () => {
         <Box className='home-fs-description'>
           <Box className='avatar-box'>
           <Avatar
-            src={ProfilePicture}
+            src={""}
             alt="Foto"
             sx={{
               width: 320,
